@@ -1,3 +1,13 @@
+#grid {
+    --GRID_COLUMNS: 1;
+  display: grid;
+  margin: auto auto;
+  grid-template-columns: repeat(var(--GRID_COLUMNS), max-content);
+  border-left: 1px dashed darkgray;
+  border-top: 1px dashed darkgray;
+  width: fit-content;
+}
+
 .cell {
     width: 10px;
     height: 10px;

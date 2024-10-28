@@ -10,7 +10,8 @@ window.addEventListener("load", start);
 function start() {
     console.log(`Javascript kører`);
     console.log(maze);
-    
+
+    createVisualBoard();
 }
 
 // #endregion controller
@@ -20,10 +21,10 @@ function start() {
 function createVisualBoard() {
     const grid = document.querySelector("#grid");
 
-    grid.style.setProperty("--GRID_COLUMNS", GRID_COLS);
+    grid.style.setProperty("--GRID_COLUMNS", maze.cols);
 
-    for (let row = 0; row < GRID_ROWS; row++) {
-        for (let col = 0; col < GRID_COLS; col++) {
+    for (let row = 0; row < maze.rows; row++) {
+        for (let col = 0; col < maze.rows; col++) {
             const cell = document.createElement("div");
             cell.classList.add("cell");
 
@@ -31,6 +32,5 @@ function createVisualBoard() {
         }
     }
 }
-
 
 // #endregion view
