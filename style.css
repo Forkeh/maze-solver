@@ -1,0 +1,22 @@
+.cell {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+.wall.north {
+    border-top: 2px solid grey;
+}
+
+.wall.south {
+    border-bottom: 2px solid grey;
+}
+
+.wall.east {
+    border-right: 2px solid grey;
+}
+
+.wall.west {
+    border-left: 2px solid grey;
+}
